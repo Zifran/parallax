@@ -14,7 +14,7 @@ body, html {
   line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
+/*Parallax*/
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
@@ -22,19 +22,19 @@ body, html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+/* First image */
 .bgimg-1 {
   background-image: url('image/asc.jpg');
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/*Second image*/
 .bgimg-2 {
   background-image: url("image/38464628.JPG");
   min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image */
 .bgimg-3 {
   background-image: url("image/asc.jpg");
   min-height: 400px;
@@ -51,37 +51,28 @@ body, html {
   width: 60%;
   min-width: 400px;
 }
-/* Turn off parallax scrolling for tablets and phones */
-/*@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}*/
+
 </style>
 <body>
-<!-- Navbar (sit on top) -->
+
 <div class="w3-top">
   <div class="w3-bar w3-card w3-animate-top w3-white" id="myNavbar">
-
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-user"></i> -->History</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-th"></i>  -->Academic</a>
-    <a href="#Department" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-envelope"> --></i> Department</a>
-    <a href="#Facilities" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-envelope"> --></i> Facilities</a>
-    <a href="#Result" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-envelope"> --></i> Result</a>
-    <a href="#Addmission" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-envelope"> --></i> Addmission</a>
-    <a href="#Notice" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-envelope"> --></i> Notice</a>
-    <a href="#ContactUs" class="w3-bar-item w3-button w3-hide-small"><!-- <i class="fa fa-envelope"> --></i> Contact Us</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <img src="image/Logo_of_DC.png" height="100px" width="100px">
-    </a>  -->
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small">History</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Academic</a>
+    <a href="#Department" class="w3-bar-item w3-button w3-hide-small"></i> Department</a>
+    <a href="#Facilities" class="w3-bar-item w3-button w3-hide-small"></i> Facilities</a>
+    <a href="#Result" class="w3-bar-item w3-button w3-hide-small"></i> Result</a>
+    <a href="#Addmission" class="w3-bar-item w3-button w3-hide-small"></i> Addmission</a>
+    <a href="#Notice" class="w3-bar-item w3-button w3-hide-small"></i> Notice</a>
+    <a href="#ContactUs" class="w3-bar-item w3-button w3-hide-small"></i> Contact Us</a>
+
   </div> 
 
-  <!-- Navbar on small screens -->
+  <!--small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">History</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Academic</a>
@@ -89,15 +80,15 @@ body, html {
     <a href="#Facilities" class="w3-bar-item w3-button" onclick="toggleFunction()">Facilities</a>
     <a href="#Result" class="w3-bar-item w3-button" onclick="toggleFunction()">Result</a>
     <a href="#ContactUs" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact Us</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
   </div>
 </div>
-  <!-- banner --><br><br>
+  <!-- banner -->
+  <br><br>
 <div class="banner  w3-white">
  <img src="image/dc_banner_logo-blue.png" class="banner">
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!--Image with Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">KNOW <span class="w3-hide-small">THYSELF</span></span>
@@ -120,16 +111,16 @@ body, html {
       <img src="image/vice-principle.jpg" class="w3-round w3-image w3-opacity-off w3-hover-opacity" alt="Photo of Me" width="200" height="133">
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6  w3-padding-large">  <!-- for hide text on mobile view w3-hide-small -->
+  
+    <div class="w3-col m6  w3-padding-large">
       <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6  w3-padding-large">  <!-- for hide text on mobile view w3-hide-small -->
+
+    <div class="w3-col m6  w3-padding-large"> 
       <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -174,7 +165,7 @@ body, html {
   </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">MAIN SECTION</span>
@@ -186,29 +177,29 @@ body, html {
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+ 
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="image/noticeboard.png" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Notice are Here">
+      <img src="image/noticeboard.png" style="width:200px" alt="Notice are Here">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/history.png" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Know the History">
+      <img src="image/history.png" style="width:200px"  alt="Know the History">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/gallery.svg" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Watch the Photo Gallery">
+      <img src="image/gallery.svg" style="width:200px" alt="Watch the Photo Gallery">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/result.png" style="width:200px" onclick="onClick(this)" class="w3-hover-opacity" alt="Check Result">
+      <img src="image/result.png" style="width:200px"  alt="Check Result">
     </div>
   </div>
 
 </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+
+<div id="modal01" class="w3-modal w3-black" >
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
@@ -216,7 +207,7 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
@@ -230,16 +221,16 @@ body, html {
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
-      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.338703961874!2d90.38024771445549!3d23.73529829527118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c8e1ea9fd1%3A0xa6e274882fdbce53!2sDhaka%20College!5e0!3m2!1sen!2sbd!4v1569827124771!5m2!1sen!2sbd" width="100%" height="280" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mirpur Road , Dhaka<br>
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 1515151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ADMIN@mail.com<br>
       </div>
-      <p>Any Query <!-- <i class="fa fa-coffee"></i> -->,Call us or just leave a Message:</p>
-      <form action="/action_page.php" target="_blank">
+      <p>Any Query ,Call us or just leave a Message:</p>
+      <form action="" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -269,36 +260,6 @@ body, html {
   <p>Designed by <a href="#">Zifran Islam Robin </a></p>
 </footer>
  
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-// window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     var navbar = document.getElementById("myNavbar");
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-//     } else {
-//         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-//     }
-// }
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 
 </body>
 </html>
